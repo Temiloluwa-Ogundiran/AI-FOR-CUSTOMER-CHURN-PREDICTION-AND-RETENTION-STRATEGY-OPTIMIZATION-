@@ -1,0 +1,8 @@
+construct,k,pilot_alpha,pilot_n,main_alpha,main_n,threshold,decision
+CHD,10,0.93,28,0.905,335,0.7,Accept
+AIA,8,0.912,24,0.9,353,0.7,Accept
+PAC,8,0.864,25,0.894,343,0.7,Accept
+MLU,9,0.931,22,0.895,349,0.7,Accept
+RSO,8,0.93,24,0.898,347,0.7,Accept
+CRE,6,0.852,25,0.816,358,0.7,Accept
+IMP,8,0.846,26,0.878,352,0.7,Accept

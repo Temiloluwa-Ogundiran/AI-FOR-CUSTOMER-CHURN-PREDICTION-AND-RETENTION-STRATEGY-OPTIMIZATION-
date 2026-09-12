@@ -1,0 +1,151 @@
+{
+  "SYNTHETIC_NOTE": "SYNTHETIC DEMONSTRATION ONLY - pipeline verification, not real respondents or findings.",
+  "n_pilot": 30,
+  "n_main": 420,
+  "n_valid": 412,
+  "H01": {
+    "test": "Pearson AIA_Mean vs PAC_Mean",
+    "n": 400,
+    "r": 0.547,
+    "ci95": [
+      0.475,
+      0.613
+    ],
+    "p": 1.1733105528304559e-32,
+    "alpha": 0.05,
+    "decision": "Reject H01 (significant)"
+  },
+  "H02": {
+    "test": "OLS RSO_Mean ~ AIA+PAC+MLU",
+    "n": 391,
+    "coef": [
+      {
+        "var": "Intercept",
+        "b": 0.321,
+        "se": 0.154,
+        "t": 2.088,
+        "p": 0.03747654069094297
+      },
+      {
+        "var": "AIA_Mean",
+        "b": 0.295,
+        "se": 0.044,
+        "t": 6.653,
+        "p": 9.837419767677602e-11
+      },
+      {
+        "var": "PAC_Mean",
+        "b": 0.432,
+        "se": 0.042,
+        "t": 10.257,
+        "p": 0.0
+      },
+      {
+        "var": "MLU_Mean",
+        "b": 0.16,
+        "se": 0.04,
+        "t": 3.99,
+        "p": 7.915468032670958e-05
+      }
+    ],
+    "R2": 0.499,
+    "adjR2": 0.495,
+    "F": 128.65,
+    "p_F": 1.1102230246251565e-16,
+    "decision": "Reject H02 (model significant)"
+  },
+  "H03": {
+    "test": "One-way ANOVA CRE_Mean by A8",
+    "groups": [
+      {
+        "A8": 0,
+        "n": 43,
+        "mean": 2.522,
+        "sd": 0.49
+      },
+      {
+        "A8": 1,
+        "n": 98,
+        "mean": 2.82,
+        "sd": 0.556
+      },
+      {
+        "A8": 2,
+        "n": 123,
+        "mean": 2.999,
+        "sd": 0.554
+      },
+      {
+        "A8": 3,
+        "n": 89,
+        "mean": 3.246,
+        "sd": 0.599
+      },
+      {
+        "A8": 4,
+        "n": 57,
+        "mean": 3.494,
+        "sd": 0.629
+      }
+    ],
+    "F": 24.636,
+    "p": 2.8548768251705875e-18,
+    "eta2": 0.196,
+    "levene_W": 1.573,
+    "levene_p": 0.18060419861635404,
+    "pairwise_bonferroni": [
+      {
+        "pair": "0 vs 1",
+        "p_uncorrected": 0.002,
+        "p_bonferroni": 0.0202
+      },
+      {
+        "pair": "0 vs 2",
+        "p_uncorrected": 0.0,
+        "p_bonferroni": 0.0
+      },
+      {
+        "pair": "0 vs 3",
+        "p_uncorrected": 0.0,
+        "p_bonferroni": 0.0
+      },
+      {
+        "pair": "0 vs 4",
+        "p_uncorrected": 0.0,
+        "p_bonferroni": 0.0
+      },
+      {
+        "pair": "1 vs 2",
+        "p_uncorrected": 0.0181,
+        "p_bonferroni": 0.1807
+      },
+      {
+        "pair": "1 vs 3",
+        "p_uncorrected": 0.0,
+        "p_bonferroni": 0.0
+      },
+      {
+        "pair": "1 vs 4",
+        "p_uncorrected": 0.0,
+        "p_bonferroni": 0.0
+      },
+      {
+        "pair": "2 vs 3",
+        "p_uncorrected": 0.0026,
+        "p_bonferroni": 0.026
+      },
+      {
+        "pair": "2 vs 4",
+        "p_uncorrected": 0.0,
+        "p_bonferroni": 0.0
+      },
+      {
+        "pair": "3 vs 4",
+        "p_uncorrected": 0.0194,
+        "p_bonferroni": 0.1935
+      }
+    ],
+    "decision": "Reject H03 (differs)",
+    "note": "Perception-based unless audited churn-rate data added. No causality from survey alone."
+  }
+}
