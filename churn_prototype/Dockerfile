@@ -12,7 +12,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY churn_core.py train.py app.py ./
-COPY selected_pipeline.joblib implementation_report.json permutation_importance.csv Top_50_scored_customers.csv ./
+RUN python train.py
 
 EXPOSE 8501
 
